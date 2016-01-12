@@ -1,4 +1,49 @@
 <resources>
-    <string name="app_name">Soundboard</string>
+    <string name="app_name">Sounds from Rick and Morty</string>
     <string name="action_settings">Settings</string>
+
+    <string name="wub">Wubalubadubdub</string>
+    <string name="grass">"Grass Tastes Bad</string>
+    <string name="jack">Hit the sack</string>
+    <string name="jump">Summersault Jump</string>
+    <string name="news">News Goes</string>
+    <string name="sewer">No Jumpin in the Sewer</string>
+    <string name="shum">Shum Shum</string>
+
+    <string name="pants">Don\'t Even Trip</string>
+    <string name="die">Everybody\'s Gonna Die</string>
+    <string name="together">Get Your S@!# Together</string>
+
+    <string name="allDie">We All Wanna Die</string>
+    <string name="canDo">Can Do</string>
+    <string name="wannaDie">I just Wanna Die</string>
+    <string name="failures">Failures Are Your Own</string>
+    <string name="killHim">Strokes Off His Game</string>
+    <string name="lookAtMe">Look At Me</string>
+    <string name="ooo">Ooo</string>
+    <string name="pain">Existence is Pain</string>
+    <string name="shortGame">Short Game</string>
+
+    <string name="aww">Aww B1$#@</string>
+    <string name="grades">Good Grades</string>
+    <string name="halfs">These Halves</string>
+    <string name="late">Late to Class</string>
+    <string name="nightmare">Welcome to Your Nightmare</string>
+    <string name="terryPants">I\'m Not Wearing Any Pants</string>
+    <string name="run">You Can Run</string>
+    <string name="sex">Sex Is Sacred</string>
+
+    <string name="pleaseRead">
+        Thanks for downloading the app. I used it to learn
+        how to use Android Studio so I hope you enjoy! If
+        you like the app I would appreciate it if you could
+        rate it on the play store. \n\n
+        If you wish for me to add certain sounds or characters
+        leave a rating with comments on what you would like to
+        see! I will update it as much as possible. \n\n
+        Rick and Morty was created by Justin Roiland and Dan Harmon
+        and is the property of Adult Swim. I do not own this content
+        and am not profiting from this app. \n\n
+
+        PEACE AMONG WORLDS.</string>
 </resources>
