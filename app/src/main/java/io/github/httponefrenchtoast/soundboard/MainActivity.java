@@ -1,18 +1,13 @@
 package io.github.httponefrenchtoast.soundboard;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.media.MediaPlayer;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
     public void clickHandler(View v){
 
         int id = v.getId();
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.rick_wubalub);
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
 
         switch (id){
 
             case R.id.button1:
-                mp = MediaPlayer.create(this, R.raw.brutalmario);
+                mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -50,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button2:
-                mp = MediaPlayer.create(this, R.raw.ddm);
+                mp = MediaPlayer.create(this, R.raw.bmbrutalmario);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -61,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button3:
-                mp = MediaPlayer.create(this, R.raw.provaddm);
+                mp = MediaPlayer.create(this, R.raw.bmcapopalestra);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -72,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button4:
-                mp = MediaPlayer.create(this, R.raw.glitch);
+                mp = MediaPlayer.create(this, R.raw.bmcazzitua);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -83,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button5:
-                mp = MediaPlayer.create(this, R.raw.fuori);
+                mp = MediaPlayer.create(this, R.raw.bmgrandebm);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -94,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button6:
-                mp = MediaPlayer.create(this, R.raw.rick_burgertime);
+                mp = MediaPlayer.create(this, R.raw.bmhairottoilcazzo);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -105,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button7:
-                mp = MediaPlayer.create(this, R.raw.rick_grass);
+                mp = MediaPlayer.create(this, R.raw.bmkiller);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -116,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button8:
-                mp = MediaPlayer.create(this, R.raw.rick_jack);
+                mp = MediaPlayer.create(this, R.raw.bmperfavore);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -127,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button9:
-                mp = MediaPlayer.create(this, R.raw.rick_jump);
+                mp = MediaPlayer.create(this, R.raw.bmpotenza);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -138,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button10:
-                mp = MediaPlayer.create(this, R.raw.rick_news);
+                mp = MediaPlayer.create(this, R.raw.bmsopravvissuto);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -148,6 +143,14 @@ public class MainActivity extends AppCompatActivity {
                 });
                 break;
 
+
+            /*
+            *
+            *
+            *
+            *
+            *
+            *
             case R.id.button11:
                 mp = MediaPlayer.create(this, R.raw.rick_sewer);
                 mp.start();
@@ -389,6 +392,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 break;
+            *
+            * */
+
 
 
         }
