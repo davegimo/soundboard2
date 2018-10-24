@@ -22,9 +22,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="55dp"
-            android:text="Rick Sanchez"
+            android:text="Dio del Metal"
             android:textColor="@color/black"
-            android:background="@color/neonGreen"
+            android:background="@color/red"
             android:id="@+id/textView" />
 
         <Button
@@ -160,9 +160,9 @@
             android:id="@+id/mortTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Morty Smith"
+            android:text="Brutal Mario"
             android:textColor="@color/black"
-            android:background="@color/neonGreen"
+            android:background="@color/red"
             android:layout_below="@+id/button9"
             />
 

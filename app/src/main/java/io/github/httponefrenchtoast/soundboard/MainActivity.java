@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Sounds from Rick and Morty");
+        getSupportActionBar().setTitle("DIO DEL METAL SOUNDBOARD");
 
     }
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         switch (id){
 
             case R.id.button1:
-                mp = MediaPlayer.create(this, R.raw.rick_wubalub);
+                mp = MediaPlayer.create(this, R.raw.brutalmario);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button2:
-                mp = MediaPlayer.create(this, R.raw.rick_aids);
+                mp = MediaPlayer.create(this, R.raw.ddm);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button3:
-                mp = MediaPlayer.create(this, R.raw.rick_balls);
+                mp = MediaPlayer.create(this, R.raw.provaddm);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button4:
-                mp = MediaPlayer.create(this, R.raw.rick_beotch);
+                mp = MediaPlayer.create(this, R.raw.glitch);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
