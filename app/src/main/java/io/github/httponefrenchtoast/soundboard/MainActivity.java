@@ -18,6 +18,12 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
 
+    public MainActivity () {
+        Global G = new Global();
+        G.audioActive = false;
+
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Classic"));
         tabLayout.addTab(tabLayout.newTab().setText("Brutal"));
         tabLayout.addTab(tabLayout.newTab().setText("Locke"));
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_face_black_24dp);
+        tabLayout.getTabAt(0).setIcon(R.drawable.logoddm);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_face_black_24dp);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_face_black_24dp);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
@@ -72,117 +78,131 @@ public class MainActivity extends AppCompatActivity {
         int id = v.getId();
         MediaPlayer mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
 
-        switch (id){
+        if (!Global.G.audioActive) {
 
-            case R.id.button1:
-                mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+            Global.G.audioActive = true;
 
-            case R.id.button2:
-                mp = MediaPlayer.create(this, R.raw.bmbrutalmario);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+            switch (id){
 
-            case R.id.button3:
-                mp = MediaPlayer.create(this, R.raw.bmcapopalestra);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button1:
+                    mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
-            case R.id.button4:
-                mp = MediaPlayer.create(this, R.raw.bmcazzitua);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button2:
+                    mp = MediaPlayer.create(this, R.raw.bmbrutalmario);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
-            case R.id.button5:
-                mp = MediaPlayer.create(this, R.raw.bmgrandebm);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button3:
+                    mp = MediaPlayer.create(this, R.raw.bmcapopalestra);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
-            case R.id.button6:
-                mp = MediaPlayer.create(this, R.raw.bmhairottoilcazzo);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button4:
+                    mp = MediaPlayer.create(this, R.raw.bmcazzitua);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
-            case R.id.button7:
-                mp = MediaPlayer.create(this, R.raw.bmkiller);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button5:
+                    mp = MediaPlayer.create(this, R.raw.bmgrandebm);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
-            case R.id.button8:
-                mp = MediaPlayer.create(this, R.raw.bmperfavore);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button6:
+                    mp = MediaPlayer.create(this, R.raw.bmhairottoilcazzo);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
-            case R.id.button9:
-                mp = MediaPlayer.create(this, R.raw.bmpotenza);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button7:
+                    mp = MediaPlayer.create(this, R.raw.bmkiller);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
-            case R.id.button10:
-                mp = MediaPlayer.create(this, R.raw.bmsopravvissuto);
-                mp.start();
-                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        mp.release();
-                    }
-                });
-                break;
+                case R.id.button8:
+                    mp = MediaPlayer.create(this, R.raw.bmperfavore);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
+
+                case R.id.button9:
+                    mp = MediaPlayer.create(this, R.raw.bmpotenza);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
+
+                case R.id.button10:
+                    mp = MediaPlayer.create(this, R.raw.bmsopravvissuto);
+                    mp.start();
+                    mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            Global.G.audioActive = false;
+                        }
+                    });
+                    break;
 
 
             /*
@@ -438,7 +458,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+            }
+
+
+
         }
+
 
 
 
