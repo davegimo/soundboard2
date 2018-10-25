@@ -47,6 +47,21 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_face_black_24dp);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
+
+/*
+*       MediaPlayer mpSoundtrack = MediaPlayer.create(this, R.raw.soundtrack);
+        mpSoundtrack.setLooping(true);
+
+        mpSoundtrack.start();
+
+
+*/
+
+
+
+
+
+
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PagerAdapter adapter = new PagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
