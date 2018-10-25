@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button1"
+                    android:onClick="clickHandler"
+                    android:textColor="@color/white"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="avanti" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button2"
+                    android:textColor="@color/white"
+                    android:onClick="clickHandler"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Questo giro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button3"
+                    android:textColor="@color/white"
+                    android:onClick="clickHandler"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Si, Non te" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button4"
+                    android:textColor="@color/white"
+                    android:onClick="clickHandler"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="vuoi sfidare" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

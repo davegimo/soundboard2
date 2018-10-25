@@ -1,6 +1,7 @@
 package io.github.httponefrenchtoast.soundboard;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.media.MediaPlayer;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,8 +25,43 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        TextView customTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
+        Typeface metal_font = Typeface.createFromAsset(getApplication().getAssets(), "metal_font.ttf");
+
+        customTitle.setTypeface(metal_font);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("DIO DEL METAL SOUNDBOARD");
+        getSupportActionBar().setTitle("");
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabLayout.addTab(tabLayout.newTab().setText("Classic"));
+        tabLayout.addTab(tabLayout.newTab().setText("Brutal"));
+        tabLayout.addTab(tabLayout.newTab().setText("Locke"));
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_face_black_24dp);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_face_black_24dp);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_face_black_24dp);
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        final PagerAdapter adapter = new PagerAdapter
+                (getSupportFragmentManager(), tabLayout.getTabCount());
+        viewPager.setAdapter(adapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
     }
 

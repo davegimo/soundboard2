@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button5"
+                    android:onClick="clickHandler"
+                    android:textColor="@color/white"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Brutal mairio" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button6"
+                    android:textColor="@color/white"
+                    android:onClick="clickHandler"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Hai rotto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingTop="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button7"
+                    android:textColor="@color/white"
+                    android:onClick="clickHandler"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Si è un po rotto.." />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/button8"
+                    android:textColor="@color/white"
+                    android:onClick="clickHandler"
+                    android:background="@color/dark_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bo" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
