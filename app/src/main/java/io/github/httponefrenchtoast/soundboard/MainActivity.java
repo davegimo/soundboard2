@@ -13,10 +13,14 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-
+    private AdView mAdView;
 
     public MainActivity () {
         Global G = new Global();
@@ -47,7 +51,12 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_face_black_24dp);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
+        //Inizializzazione istanza AdMob
+        MobileAds.initialize(this, "ca-app-pub-8764329147278404~3364005765");
 
+        mAdView = (AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 /*
 *       MediaPlayer mpSoundtrack = MediaPlayer.create(this, R.raw.soundtrack);
         mpSoundtrack.setLooping(true);

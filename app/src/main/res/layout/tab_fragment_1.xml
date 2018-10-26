@@ -21,63 +21,61 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:padding="5dp"
                 android:layout_height="0dp"
                 android:weightSum="2"
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_margin="5dp"
                     android:id="@+id/button1"
-                    android:onClick="clickHandler"
-                    android:textColor="@color/white"
-                    android:background="@color/dark_red"
                     android:layout_width="0dp"
+                    android:layout_margin="5dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="avanti" />
+                    android:background="@drawable/rounded_button"
+                    android:onClick="clickHandler"
+                    android:text="avanti"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_margin="5dp"
                     android:id="@+id/button2"
-                    android:textColor="@color/white"
-                    android:onClick="clickHandler"
-                    android:background="@color/dark_red"
                     android:layout_width="0dp"
+                    android:layout_margin="5dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Questo giro" />
+                    android:background="@drawable/rounded_button"
+                    android:onClick="clickHandler"
+                    android:text="Questo giro"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:padding="5dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:weightSum="2"
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_margin="5dp"
                     android:id="@+id/button3"
-                    android:textColor="@color/white"
-                    android:onClick="clickHandler"
-                    android:background="@color/dark_red"
                     android:layout_width="0dp"
+                    android:layout_margin="5dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Si, Non te" />
+                    android:background="@drawable/rounded_button"
+                    android:onClick="clickHandler"
+                    android:text="Si, Non te"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_margin="5dp"
                     android:id="@+id/button4"
-                    android:textColor="@color/white"
-                    android:onClick="clickHandler"
-                    android:background="@color/dark_red"
                     android:layout_width="0dp"
+                    android:layout_margin="5dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="vuoi sfidare" />
+                    android:background="@drawable/rounded_button"
+                    android:onClick="clickHandler"
+                    android:text="vuoi sfidare"
+                    android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
 
