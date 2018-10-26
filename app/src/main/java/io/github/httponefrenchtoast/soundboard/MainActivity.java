@@ -21,6 +21,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
     private AdView mAdView;
+    private MediaPlayer[] players;
 
     public MainActivity () {
         Global G = new Global();
@@ -57,19 +58,13 @@ public class MainActivity extends AppCompatActivity {
         mAdView = (AdView)findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-/*
-*       MediaPlayer mpSoundtrack = MediaPlayer.create(this, R.raw.soundtrack);
+
+
+
+        MediaPlayer mpSoundtrack = MediaPlayer.create(this, R.raw.soundtrack);
+        mpSoundtrack.setVolume(0.04f,0.04f);
         mpSoundtrack.setLooping(true);
-
         mpSoundtrack.start();
-
-
-*/
-
-
-
-
-
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PagerAdapter adapter = new PagerAdapter
@@ -101,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
 
         int id = v.getId();
         MediaPlayer mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
-
         if (!Global.G.audioActive) {
 
             Global.G.audioActive = true;
