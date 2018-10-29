@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Brutal"));
         tabLayout.addTab(tabLayout.newTab().setText("Locke"));
         tabLayout.getTabAt(0).setIcon(R.drawable.classic);
-        tabLayout.getTabAt(1).setIcon(R.drawable.brutal);
+        tabLayout.getTabAt(1).setIcon(R.drawable.brutallino);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_face_black_24dp);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
@@ -92,7 +92,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     public void clickHandler(View v){
+
 
         int id = v.getId();
         MediaPlayer mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
@@ -101,6 +103,9 @@ public class MainActivity extends AppCompatActivity {
             Global.G.audioActive = true;
 
             switch (id){
+
+
+                ///// BRUTAL MARIO AUDIO
 
                 case R.id.button1:
                     mp = MediaPlayer.create(this, R.raw.bmandiamoavanti);
@@ -138,10 +143,96 @@ public class MainActivity extends AppCompatActivity {
                     mp = MediaPlayer.create(this, R.raw.bmpotenza);
                     break;
 
+                ///// CLASSIC AUDIO
+
                 case R.id.button10:
                     mp = MediaPlayer.create(this, R.raw.bmsopravvissuto);
                     break;
 
+
+                case R.id.button11:
+                    mp = MediaPlayer.create(this, R.raw.camicisatana);
+                    break;
+
+
+                case R.id.button12:
+                    mp = MediaPlayer.create(this, R.raw.cburied);
+                    break;
+
+                case R.id.button13:
+                    mp = MediaPlayer.create(this, R.raw.cfroci);
+                    break;
+
+                case R.id.button14:
+                    mp = MediaPlayer.create(this, R.raw.cfuoridaicoglioni);
+                    break;
+
+                case R.id.button15:
+                    mp = MediaPlayer.create(this, R.raw.cglitch);
+                    break;
+
+                case R.id.button16:
+                    mp = MediaPlayer.create(this, R.raw.cglitchpokemon);
+                    break;
+
+                case R.id.button17:
+                    mp = MediaPlayer.create(this, R.raw.cguardiaioto);
+                    break;
+
+                case R.id.button18:
+                    mp = MediaPlayer.create(this, R.raw.cinfernale);
+                    break;
+
+                case R.id.button19:
+                    mp = MediaPlayer.create(this, R.raw.crazzista);
+                    break;
+
+                case R.id.button20:
+                    mp = MediaPlayer.create(this, R.raw.cshiny);
+                    break;
+
+
+                 //////////// LOCKE AUDIO
+
+                case R.id.button21:
+                    mp = MediaPlayer.create(this, R.raw.lancora);
+                    break;
+
+                case R.id.button22:
+                    mp = MediaPlayer.create(this, R.raw.ledificio);
+                    break;
+
+                case R.id.button23:
+                    mp = MediaPlayer.create(this, R.raw.lesult);
+                    break;
+
+                case R.id.button24:
+                    mp = MediaPlayer.create(this, R.raw.lfateschifo);
+                    break;
+
+                case R.id.button25:
+                    mp = MediaPlayer.create(this, R.raw.lfuori);
+                    break;
+
+                case R.id.button26:
+                    mp = MediaPlayer.create(this, R.raw.lmacheschifo);
+                    break;
+
+                case R.id.button27:
+                    mp = MediaPlayer.create(this, R.raw.lpietrafocaia);
+                    break;
+
+                case R.id.button28:
+                    mp = MediaPlayer.create(this, R.raw.lsatana);
+                    break;
+
+                case R.id.button29:
+                    mp = MediaPlayer.create(this, R.raw.lvermi);
+                    break;
+
+                case R.id.button30:
+                    mp = MediaPlayer.create(this, R.raw.lzozo);
+                    break;
 
             /*
             *
