@@ -30,8 +30,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_brutal_hat_white" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/../brutal_hat.svg" />
+                            <entry key="outputName" value="ic_locke_white" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../ic_locke_white.svg" />
                           </map>
                         </option>
                       </PersistentState>
