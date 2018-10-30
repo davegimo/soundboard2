@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Classic"));
         tabLayout.addTab(tabLayout.newTab().setText("Brutal"));
         tabLayout.addTab(tabLayout.newTab().setText("Locke"));
-        tabLayout.getTabAt(0).setIcon(R.drawable.ddm_classic);
-        tabLayout.getTabAt(1).setIcon(R.drawable.brutal_mario_face);
-        tabLayout.getTabAt(2).setIcon(R.drawable.locke_face);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_classic_white);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_brutal_hat_white);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_locke_white);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         //Inizializzazione istanza AdMob
