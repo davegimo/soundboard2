@@ -36,20 +36,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        /* Codice per gestire il font della toolbar
         TextView customTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
         Typeface metal_font = Typeface.createFromAsset(getApplication().getAssets(), "metal_font.ttf");
-
         customTitle.setTypeface(metal_font);
+        */
+
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().setTitle("Dio del Metal Soundboard");
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Classic"));
         tabLayout.addTab(tabLayout.newTab().setText("Brutal"));
         tabLayout.addTab(tabLayout.newTab().setText("Locke"));
-        tabLayout.getTabAt(0).setIcon(R.drawable.classic);
-        tabLayout.getTabAt(1).setIcon(R.drawable.brutallino);
-        tabLayout.getTabAt(2).setIcon(R.drawable.ic_face_black_24dp);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ddm_classic);
+        tabLayout.getTabAt(1).setIcon(R.drawable.brutal_mario_face);
+        tabLayout.getTabAt(2).setIcon(R.drawable.locke_face);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         //Inizializzazione istanza AdMob
