@@ -18,13 +18,14 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-        <TextView
+
+        <!--TextView
+            android:id="@+id/toolbar_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:text="Dio del Metal Soundboard"
             android:layout_gravity="center"
-            android:id="@+id/toolbar_title" />
+            android:text=""
+            android:textAlignment="center" /-->
     </android.support.v7.widget.Toolbar>
 
     <android.support.design.widget.TabLayout
