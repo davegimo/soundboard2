@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/pleaseRead"
+        android:text="@string/ddm"
         android:id="@+id/textView2" />
 
 </LinearLayout>

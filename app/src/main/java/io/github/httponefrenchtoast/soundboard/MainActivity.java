@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         MediaPlayer mpSoundtrack = MediaPlayer.create(this, R.raw.soundtrack);
-        mpSoundtrack.setVolume(0.04f,0.04f);
+        mpSoundtrack.setVolume(0.07f,0.07f);
         mpSoundtrack.setLooping(true);
         mpSoundtrack.start();
 
