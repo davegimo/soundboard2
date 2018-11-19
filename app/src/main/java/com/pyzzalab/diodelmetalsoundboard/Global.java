@@ -1,4 +1,4 @@
-package io.github.httponefrenchtoast.soundboard;
+package com.pyzzalab.diodelmetalsoundboard;
 
 public class Global {
 

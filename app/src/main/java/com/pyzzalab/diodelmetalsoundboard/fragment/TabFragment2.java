@@ -1,4 +1,4 @@
-package io.github.httponefrenchtoast.soundboard.fragment;
+package com.pyzzalab.diodelmetalsoundboard.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import io.github.httponefrenchtoast.soundboard.R;
+import com.pyzzalab.diodelmetalsoundboard.R;
 
 public class TabFragment2 extends Fragment {
 

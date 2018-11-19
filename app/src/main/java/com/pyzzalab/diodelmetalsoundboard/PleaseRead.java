@@ -1,8 +1,10 @@
-package io.github.httponefrenchtoast.soundboard;
+package com.pyzzalab.diodelmetalsoundboard;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+
+import com.pyzzalab.diodelmetalsoundboard.R;
 
 
 public class PleaseRead extends Activity {

@@ -1,4 +1,4 @@
-package io.github.httponefrenchtoast.soundboard;
+package com.pyzzalab.diodelmetalsoundboard;
 
 import android.media.MediaPlayer;
 import android.os.AsyncTask;

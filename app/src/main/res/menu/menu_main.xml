@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="io.github.httponefrenchtoast.soundboard.MainActivity">
+    tools:context="com.io.pyzzalab.httponefrenchtoast.soundboard.com.pyzzalab.httponefrenchtoast.soundboard.MainActivity">
 
     <item
         android:id="@+id/pleaseRead"
