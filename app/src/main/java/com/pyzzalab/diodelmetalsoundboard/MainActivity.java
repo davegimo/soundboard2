@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Dio del Metal Soundboard");
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Classic"));
         tabLayout.addTab(tabLayout.newTab().setText("Brutal"));
+        tabLayout.addTab(tabLayout.newTab().setText("Classic"));
         tabLayout.addTab(tabLayout.newTab().setText("Locke"));
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_classic_white);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_brutal_hat_white);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_brutal_hat_white);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_classic_white);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_locke_white);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
