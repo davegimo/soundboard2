@@ -1,4 +1,4 @@
-package com.pyzzalab.diodelmetalsoundboard;
+package com.pyzzalab.ddmsoundboard;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

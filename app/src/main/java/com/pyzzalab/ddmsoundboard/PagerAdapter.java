@@ -1,12 +1,12 @@
-package com.pyzzalab.diodelmetalsoundboard;
+package com.pyzzalab.ddmsoundboard;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.pyzzalab.diodelmetalsoundboard.fragment.TabFragment1;
-import com.pyzzalab.diodelmetalsoundboard.fragment.TabFragment2;
-import com.pyzzalab.diodelmetalsoundboard.fragment.TabFragment3;
+import com.pyzzalab.ddmsoundboard.fragment.TabFragment1;
+import com.pyzzalab.ddmsoundboard.fragment.TabFragment2;
+import com.pyzzalab.ddmsoundboard.fragment.TabFragment3;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;

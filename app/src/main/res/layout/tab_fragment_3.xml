@@ -123,7 +123,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
                     android:onClick="clickHandler"
-                    android:text="fate schifo!"
+                    android:text="Lt. Surge"
                     android:textColor="@color/white" />
 
                 <Button
